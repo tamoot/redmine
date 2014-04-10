@@ -20,7 +20,7 @@
 
 <% @grouped.keys.sort.each do |group| %>
     <h3><%= group %></h3>
-    <%= render :partial => 'documents/document', :collection => @grouped[group] %>
+    <%= render :partial => 'documents/documenttitle', :collection => @grouped[group] %> 
 <% end %>
 
 <% content_for :sidebar do %>
